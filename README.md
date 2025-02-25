@@ -1,6 +1,4 @@
-># Project README
-
-CATATAC Public Repo
+# CATATAC Public Repo
 
 ## Directory Structure
 
