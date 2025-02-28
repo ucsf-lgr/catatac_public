@@ -1,0 +1,35 @@
+how to run secondary script
+1. change script paths for your data
+
+2. install papermill (conda first if you dont have it)
+- conda install -c conda-forge papermill
+
+3. update bioconductor to 3.14+
+- R
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install(version = "3.17")
+
+then run, "BiocManager::install("GenomeInfoDb")"" after updating Bioc
+
+4. install SeuratPipe 
+- R
+- remotes::install_github("andreaskapou/SeuratPipe@release/v1.0.0")
+
+5. install tidyverse
+- R
+- install.packages("tidyverse")
+
+
+## Script 5 involves manual selection of guides
+6. for script 5, specify base r kernel in SECONDARY*.sh
+- "--kernel ir"
+
+7. install ggExtra
+- R
+- install.packages("ggExtra")
+
+8. 05a script installs
+install.packages("ggpubr")
+
