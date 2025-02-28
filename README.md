@@ -24,69 +24,69 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
 	- **Inputs**: Outputs from primary, path to CATATAC secondary pipeline
 	- **Outputs**: RDS, sobj, csvs, guide caller calls, plots, notebooks for each step in the pipeline
 
-- **06_filter_cc_genes_and_mixscape_all_samples_ngc.ipynb**
+- **00_filter_cc_genes_and_mixscape_all_samples_supp3C.ipynb**
   - **Description**: Filters cell cycle genes and performs Mixscape analysis. Assigns calls
   - **Inputs**: sobj/RDS, guide caller calls
-  - **Outputs**: sobj/RDS, plots
+  - **Outputs**: sobj/RDS, plots, Supplemental Figure 3C
 
-- **07_merge_samples_ngc.ipynb**
+- **01_merge_samples_fig3EF.ipynb**
   - **Description**: Merges multiple sample datasets for analysis.
   - **Inputs**: sobj/RDS
-  - **Outputs**: sobj/RDS, csv, plots, umaps fig 3
+  - **Outputs**: sobj/RDS, csv, plots, Figures 3 E and F
 
 #### Motif Analysis
-- **07b_ngc_motif_analysis.ipynb**
+- **02_ngc_motif_analysis.ipynb**
   - **Description**: Performs motif analysis.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Motif csvs
 
-- **07c_ngc_motif_footprinting.ipynb**
-  - **Description**: Analyzes motif footprinting.
-  - **Inputs**: Merged sobj/RDS, DEA results 
-  - **Outputs**: Footprinting plots
-
 #### Gene Regulatory Network Analysis
-- **08c_pando_ngc.R**, **08c_pando_ngc.ipynb**, **08c_pando_subsets.R**, **08c_pando_subsets.ipynb**
-  - **Description**: Applies Pando for regulatory network inference. R script is the driver, ipynb for plots.
+- **03_pando_ngc.R**
+  - **Description**: Applies Pando for regulatory network inference.
   - **Inputs**: Merged sobj/RDS
-  - **Outputs**: GRN sobj, GRN plots, Fig 4D and Supplemental Fig 4
+  - **Outputs**: GRN sobj and modules
+
+- **04_pando_ngc_fig4D_supp4.ipynb**
+  - **Description**: Makes plots with outputs from 03.
+  - **Inputs**: Merged sobj/RDS + 03 outs
+  - **Outputs**: Figure 4D and Supplemental Figure 4, GRN coefs
 
 #### Visualization and Figure Generation 
-- **13_DEA_heatmaps.R.ipynb**
+- **05_DEA_heatmaps_fig4A.R.ipynb**
   - **Description**: Creates heatmaps from DEA data.
   - **Inputs**: Merged sobj/RDS, DEA csvs
   - **Outputs**: Plot Fig 4A
 
-- **16_promoter_expression_plots.R.ipynb**
+- **06_promoter_expression_plots_supp3B.R.ipynb**
   - **Description**: Generates plots of promoter expression. 
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Supplemental Fig 3B plot
 
-- **17_make_figure4ef.ipynb**, **17_make_figure4ef_output.ipynb**, **17b_figure4ef_remake.R.ipynb**
-  - **Description**: Creates Fig 4E and F. Different types. Remake used in paper for F.
-  - **Inputs**: Merged sobj/RDS
-  - **Outputs**: Plots Fig 4E and F
+- **07_fig4EF.R.ipynb**
+  - **Description**: Creates Fig 4E and F.
+  - **Inputs**: Merged sobj/RDS, GRN coefs (saved in 04)
+  - **Outputs**: Figures 4E and F
 
-- **22_make_new_dotplots.R.ipynb**
-  - **Description**: Generates dotplot visualizations.
+- **08_fig3C.R.ipynb**
+  - **Description**: Generates dotplot visualizations showing target gene knockdown in cell populations which received the indicated guide in both dasatinib and DMSO treated conditions.
   - **Inputs**: Merged sobj/RDS
-  - **Outputs**: Plot Fig 3C
+  - **Outputs**: Figure 3C
 
-- **24_qc_multiomic_comparisons.R**
+- **09_qc_multiomic_comparisons_supp1CDEF.R**
   - **Description**: Generates QC comparison plots across methods. [Link to paper where external data is from](https://www.sciencedirect.com/science/article/pii/S2405471224003661?via%3Dihub)
   - **Inputs**: Merged sobj/RDS, GSM8528725_MPS, CROP-Multiome.RDS, qc_Source_Data
-  - **Outputs**: Plot Fig 3C
+  - **Outputs**: Supplemental Figures 1C , D, E, and F
 
 #### Specific Analyses
-- **23_calc_guide_knockdown.R.ipynb**
+- **10_calc_guide_knockdown.R.ipynb**
   - **Description**: Calculates guide RNA knockdown efficiency.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Table of knockdown
 
-- **protospacer_distribution_plot.ipynb**
+- **11_protospacer_distribution_plot_supp3A.ipynb**
   - **Description**: Plots distribution of protospacers.
   - **Inputs**: Guide calls
-  - **Outputs**: Supplemental Fig 3A
+  - **Outputs**: Supplemental Figure 3A
 
 ## Workflow Summary
 
