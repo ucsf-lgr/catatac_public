@@ -29,7 +29,7 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
 	- **Inputs**: Outputs from primary, path to CATATAC secondary pipeline
 	- **Outputs**: RDS, sobj, csvs, guide caller calls, plots, notebooks for each step in the pipeline
 
-### 03_additional_analysis_and_figures
+### 03_additional_analysis_and_figures/
 #### Data Processing and QC Notebooks
 - **00_filter_cc_genes_and_mixscape_all_samples_supp3C.ipynb**
   - **Description**: Filters cell cycle genes and performs Mixscape analysis. Assigns calls
