@@ -9,6 +9,7 @@ Contains primary analysis data organized by experimental conditions:
 - **DASA1/** - Dasatinib treatment replicate 1
 - **DASA2/** - Dasatinib treatment replicate 2
 
+- **Use**: Seperate pipeline README in 00_catatac_pipeline
 - **Inputs**: FASTQS, library files, protospacer information files, path to CATATAC primary pipeline
 - **Outputs**: Cellranger output, csvs, tsvs
 
@@ -21,6 +22,7 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
 	- **DMSO2/** - Control condition replicate 2
 	- **DASA1/** - Dasatinib treatment replicate 1
 	- **DASA2/** - Dasatinib treatment replicate 2
+  - **Use**: Seperate pipeline README in 00_catatac_pipeline
 	- **Inputs**: Outputs from primary, path to CATATAC secondary pipeline
 	- **Outputs**: RDS, sobj, csvs, guide caller calls, plots, notebooks for each step in the pipeline
 
