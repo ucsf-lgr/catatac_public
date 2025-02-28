@@ -97,14 +97,23 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
 
 ## Workflow Summary
 
-The overall workflow appears to follow these general steps:
+The overall workflow follows these general steps:
 
-1. **Primary Analysis**: Processing raw data in the dasatinib_primary_01HD directory, organized by experimental conditions.
-2. **Data Processing and QC**: Filtering, quality control, and preprocessing of the data (06_, 07_ notebooks).
-3. **Motif Analysis**: Analysis of DNA binding motifs (07b_, 07c_ notebooks).
-4. **Gene Regulatory Network Analysis**: Inference of gene regulatory networks using Pando (08_ notebooks).
-5. **Specific Analyses**: Focused on guide knockdown and protospacer distribution.
-6. **Visualization**: Generation of figures and plots for publication or interpretation.
+1. **Pipeline Setup**: Setup and configuration in the 00_catatac_pipeline directory that orchestrates the primary and secondary analyses.
+
+2. **Primary Analysis**: Processing raw FASTQ data using the pipeline templates in 01_catatac_pipeline_primary_templates, organized by experimental conditions (DMSO1, DMSO2, DASA1, DASA2).
+
+3. **Secondary Analysis**: Further processing and quality control in 02_catatac_pipeline_secondary_outs, producing RDS/Seurat objects and guide caller outputs.
+
+4. **Additional Analyses and Figure Generation**: In 03_additional_analysis_and_figures:
+   - Data preprocessing (filtering cell cycle genes, merging samples)
+   - Motif analysis for transcription factor binding sites
+   - Gene regulatory network inference using Pando
+   - Differential expression analysis and visualization
+   - Guide RNA knockdown efficiency analysis
+   - Generation of publication-quality figures and plots
+
+This modular workflow allows for systematic analysis of CATATAC data from raw sequencing files through to biological insights and publication-ready visualizations.
 
 ## Common File Inputs/Outputs
 
