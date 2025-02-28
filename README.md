@@ -2,8 +2,11 @@
 
 ## Directory Structure
 
-### dasatinib_primary_01HD/
-Contains primary analysis data organized by experimental conditions:
+### 00_catatac_pipeline/
+Contains pipeline to run 01 and 02.
+
+### 01_catatac_pipeline_primary_templates/
+Contains primary analysis scripts organized by experimental conditions:
 - **DMSO1/** - Control condition replicate 1
 - **DMSO2/** - Control condition replicate 2
 - **DASA1/** - Dasatinib treatment replicate 1
@@ -13,7 +16,7 @@ Contains primary analysis data organized by experimental conditions:
 - **Inputs**: FASTQS, library files, protospacer information files, path to CATATAC primary pipeline
 - **Outputs**: Cellranger output, csvs, tsvs
 
-### secondary/
+### 02_catatac_pipeline_secondary_outs/
 Contains secondary analysis notebooks, organized by analysis step numbers.
 
 #### Data Processing and QC Notebooks
@@ -26,6 +29,8 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
 	- **Inputs**: Outputs from primary, path to CATATAC secondary pipeline
 	- **Outputs**: RDS, sobj, csvs, guide caller calls, plots, notebooks for each step in the pipeline
 
+### 03_additional_analysis_and_figures
+#### Data Processing and QC Notebooks
 - **00_filter_cc_genes_and_mixscape_all_samples_supp3C.ipynb**
   - **Description**: Filters cell cycle genes and performs Mixscape analysis. Assigns calls
   - **Inputs**: sobj/RDS, guide caller calls
