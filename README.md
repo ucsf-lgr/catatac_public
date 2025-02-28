@@ -46,21 +46,6 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
   - **Outputs**: Footprinting plots
 
 #### Gene Regulatory Network Analysis
-- **08ba_cicero.R.ipynb**
-  - **Description**: Uses Cicero for cis-regulatory interaction analysis.
-  - **Inputs**: Merged sobj/RDS
-  - **Outputs**: Cicero Objects
-
-- **08bb_cicero_downstream_analysis.R.ipynb**
-  - **Description**: Performs downstream analysis of Cicero results.
-  - **Inputs**: Cicero Objects
-  - **Outputs**: Plots
-
-- **08bc_cicero_link_plots.R.ipynb**
-  - **Description**: Generates plots for Cicero links.
-  - **Inputs**: Cicero Objects
-  - **Outputs**: Plots
-
 - **08c_pando_ngc.R**, **08c_pando_ngc.ipynb**, **08c_pando_subsets.R**, **08c_pando_subsets.ipynb**
   - **Description**: Applies Pando for regulatory network inference. R script is the driver, ipynb for plots.
   - **Inputs**: Merged sobj/RDS
