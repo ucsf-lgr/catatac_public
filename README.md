@@ -36,10 +36,10 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
   - **Inputs**: sobj/RDS, guide caller calls
   - **Outputs**: sobj/RDS, plots, Supplemental Figure 3C
 
-- **01_merge_samples_fig3EF.ipynb**
+- **01_merge_samples_fig3BCEF.ipynb**
   - **Description**: Merges multiple sample datasets for analysis.
   - **Inputs**: sobj/RDS
-  - **Outputs**: sobj/RDS, csv, plots, Figures 3 E and F
+  - **Outputs**: sobj/RDS, csv, plots, Figures 3 B, C, E, and F
 
 #### Motif Analysis
 - **02_ngc_motif_analysis.ipynb**
@@ -74,23 +74,18 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
   - **Inputs**: Merged sobj/RDS, GRN coefs (saved in 04)
   - **Outputs**: Figures 4E and F
 
-- **08_fig3C.R.ipynb**
-  - **Description**: Generates dotplot visualizations showing target gene knockdown in cell populations which received the indicated guide in both dasatinib and DMSO treated conditions.
-  - **Inputs**: Merged sobj/RDS
-  - **Outputs**: Figure 3C
-
-- **09_qc_multiomic_comparisons_supp1CDEF.R**
+- **08_qc_multiomic_comparisons_supp1CDEF.R**
   - **Description**: Generates QC comparison plots across methods. [Link to paper where external data is from](https://www.sciencedirect.com/science/article/pii/S2405471224003661?via%3Dihub)
   - **Inputs**: Merged sobj/RDS, GSM8528725_MPS, CROP-Multiome.RDS, qc_Source_Data
   - **Outputs**: Supplemental Figures 1C , D, E, and F
 
 #### Specific Analyses
-- **10_calc_guide_knockdown.R.ipynb**
+- **9_calc_guide_knockdown.R.ipynb**
   - **Description**: Calculates guide RNA knockdown efficiency.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Table of knockdown
 
-- **11_protospacer_distribution_plot_supp3A.ipynb**
+- **10_protospacer_distribution_plot_supp3A.ipynb**
   - **Description**: Plots distribution of protospacers.
   - **Inputs**: Guide calls
   - **Outputs**: Supplemental Figure 3A
