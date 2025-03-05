@@ -30,6 +30,27 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
 	- **Outputs**: RDS, sobj, csvs, guide caller calls, plots, notebooks for each step in the pipeline
 
 ### 03_additional_analysis_and_figures/
+#### Figure 1 Files
+- **00_catatac_secondary_pipeline_outs/**
+  - **Description**: Contains output notebooks from CATATAC Secondary Pipeline for fig 1 related data
+  - **Inputs**: CATATAC Primary Pipeline outs. Can be ran with any template above with modified file inputs and names.
+  - **Outputs**: sobj/RDS, plots, 05_demux_guides_00_demux_by_guide_fig1E.ipynb creates Figure 1E
+
+- **01_mixcape_bothPS_fig1FG_supp1A.ipynb**
+  - **Description**: Runs Mixscape.
+  - **Inputs**: sobj/RDS
+  - **Outputs**: sobj/RDS, csv, plots, Figures 1 F, G, and Supplemental Figure 1A
+
+- **02_guide_rank_plot_cond9_10_fig1H.ipynb**
+  - **Description**: Makes guide rank plot.
+  - **Inputs**: sobj/RDS, guide calls tsvs/csvs
+  - **Outputs**: Figure 1H
+
+- **03_signac_fig1IJ.ipynb**
+  - **Description**: Signac analysis for figure 1 dataset.
+  - **Inputs**: sobj/RDS, guide calls tsvs/csvs
+  - **Outputs**: Figure 1 I, J
+
 #### Data Processing and QC Notebooks
 - **00_filter_cc_genes_and_mixscape_all_samples_supp3C.ipynb**
   - **Description**: Filters cell cycle genes and performs Mixscape analysis. Assigns calls
@@ -85,10 +106,10 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Table of knockdown
 
-- **10_protospacer_distribution_plot_supp3A.ipynb**
+- **10_protospacer_distribution_plot_fig1D, supp3A.ipynb**
   - **Description**: Plots distribution of protospacers.
   - **Inputs**: Guide calls
-  - **Outputs**: Supplemental Figure 3A
+  - **Outputs**: Figure 1D, Supplemental Figure 3A
 
 ## Workflow Summary
 
