@@ -106,10 +106,20 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Table of knockdown
 
-- **10_protospacer_distribution_plot_fig1D, supp3A.ipynb**
+- **10_protospacer_distribution_plot_fig1D_supp3A.ipynb**
   - **Description**: Plots distribution of protospacers.
   - **Inputs**: Guide calls
   - **Outputs**: Figure 1D, Supplemental Figure 3A
+
+- **11_Pseudobulk_DEG_heatmap_supp3DE.ipynb**
+  - **Description**: Plots heatmap of pseudobulked DEG.
+  - **Inputs**: Merged sobj/RDS
+  - **Outputs**: Supplemental Figures 3D and E
+
+- **12_ATAC_analysis_fig3GHI_supp5.ipynb**
+  - **Description**: Additional ATAC analysis.
+  - **Inputs**: Merged sobj/RDS
+  - **Outputs**: DAR.xlsx (differentially accessible regions), Figures 3G, H, I, and Supplemental Figure 5
 
 ## Workflow Summary
 
