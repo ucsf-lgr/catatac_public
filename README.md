@@ -10,6 +10,45 @@ The codebase includes complete pipelines for processing raw FASTQ files through 
 
 All code is thoroughly documented and organized to enable reproduction of our analyses.
 
+## Workflow Overview
+
+```mermaid
+flowchart TD
+    subgraph Inputs
+        DASA1
+        DASA2
+        DMSO1
+        DMSO2
+    end
+    Inputs --> Primary[Primary Pipeline]
+    Primary --> Secondary Inputs
+    subgraph Secondary Inputs
+        DASA1S[DASA1]
+        DASA2S[DASA2]
+        DMSO1S[DMSO1]
+        DMSO2S[DMSO2]
+    end
+    Secondary Inputs --> Secondary[Secondary Pipeline]
+    Secondary --> MixInputs
+    subgraph MixInputs
+        DASA1M[DASA1]
+        DASA2M[DASA2]
+        DMSO1M[DMSO1]
+        DMSO2M[DMSO2]
+    end
+    DASA1M --> Mix1[Mixscape]
+    DASA2M --> Mix2[Mixscape]
+    DMSO1M --> Mix3[Mixscape]
+    DMSO2M --> Mix4[Mixscape]
+    Mix1 --> Merge Samples
+    Mix2 --> Merge Samples
+    Mix3 --> Merge Samples
+    Mix4 --> Merge Samples
+    Merge --> Downstream Analysis
+```
+
+*Figure: Overview of the CATATAC analysis pipeline from raw data to final results*
+
 ## Directory Structure
 
 ### 00_catatac_pipeline/
