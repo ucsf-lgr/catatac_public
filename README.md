@@ -21,16 +21,16 @@ flowchart TD
         DMSO2
     end
     Inputs --> Primary[Primary Pipeline]
-    Primary --> Secondary Inputs
-    subgraph Secondary Inputs
+    Primary --> SecondaryInputs
+    subgraph SecondaryInputs
         DASA1S[DASA1]
         DASA2S[DASA2]
         DMSO1S[DMSO1]
         DMSO2S[DMSO2]
     end
-    Secondary Inputs --> Secondary[Secondary Pipeline]
+    SecondaryInputs --> Secondary[Secondary Pipeline]
     Secondary --> MixInputs
-    subgraph MixInputs
+    subgraph MixScapeInputs
         DASA1M[DASA1]
         DASA2M[DASA2]
         DMSO1M[DMSO1]
