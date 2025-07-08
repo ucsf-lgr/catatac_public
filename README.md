@@ -29,7 +29,7 @@ flowchart TD
         DMSO2S[DMSO2]
     end
     SecondaryInputs --> Secondary[Secondary Pipeline]
-    Secondary --> MixInputs
+    Secondary --> MixScapeInputs
     subgraph MixScapeInputs
         DASA1M[DASA1]
         DASA2M[DASA2]
