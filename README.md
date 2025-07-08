@@ -44,7 +44,7 @@ flowchart TD
     Mix2 --> MergeSamples
     Mix3 --> MergeSamples
     Mix4 --> MergeSamples
-    Merge --> Downstream Analysis
+    Merge --> DownstreamAnalysis
 ```
 
 *Figure: Overview of the CATATAC analysis pipeline from raw data to final results*
