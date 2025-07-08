@@ -73,18 +73,18 @@ Contains secondary analysis notebooks, organized by analysis step numbers.
   - **Outputs**: sobj/RDS, csv, plots, Figures 3 B, C, E, and F
 
 #### Motif Analysis
-- **02_ngc_motif_analysis.ipynb**
+- **02_motif_analysis.ipynb**
   - **Description**: Performs motif analysis.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: Motif csvs
 
 #### Gene Regulatory Network Analysis
-- **03_pando_ngc.R**
+- **03_pando.R**
   - **Description**: Applies Pando for regulatory network inference.
   - **Inputs**: Merged sobj/RDS
   - **Outputs**: GRN sobj and modules
 
-- **04_pando_ngc_fig4D_supp4.ipynb**
+- **04_pando_fig4D_supp4.ipynb**
   - **Description**: Makes plots with outputs from 03.
   - **Inputs**: Merged sobj/RDS + 03 outs
   - **Outputs**: Figure 4D and Supplemental Figure 4, GRN coefs
