@@ -1,5 +1,15 @@
 # CATATAC Public Repo
 
+This repository contains the analysis code and pipelines for our CATATAC method, as described in our [bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2025.02.11.637716v2). CATATAC enables joint profiling of CRISPR perturbations and chromatin accessibility in single cells.
+
+The codebase includes complete pipelines for processing raw FASTQ files through final analysis:
+
+1. Primary Pipeline: Processes raw sequencing data by counting guides, selecting relevant reads, and running Cell Ranger for initial analysis
+2. Secondary Pipeline: Creates and processes Seurat objects for each sample, including quality control, normalization and dimensionality reduction
+3. Integration Pipeline: Merges samples using Seurat integration, performs batch correction, and prepares data for downstream analyses presented in the preprint
+
+All code is thoroughly documented and organized to enable reproduction of our analyses.
+
 ## Directory Structure
 
 ### 00_catatac_pipeline/
