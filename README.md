@@ -40,10 +40,10 @@ flowchart TD
     DASA2M --> Mix2[Mixscape]
     DMSO1M --> Mix3[Mixscape]
     DMSO2M --> Mix4[Mixscape]
-    Mix1 --> Merge Samples
-    Mix2 --> Merge Samples
-    Mix3 --> Merge Samples
-    Mix4 --> Merge Samples
+    Mix1 --> MergeSamples
+    Mix2 --> MergeSamples
+    Mix3 --> MergeSamples
+    Mix4 --> MergeSamples
     Merge --> Downstream Analysis
 ```
 
