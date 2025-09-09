@@ -3,7 +3,7 @@ set -euo pipefail
 slack() {
     curl -X POST -H 'Content-type: application/json' \
          --data "{\"text\": \"$1\" }" \
-         https://hooks.slack.com/services/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
+         <SLACK_WEBHOOK_URL> # Replace with your Slack webhook URL
 }
 
 CR_ARC_PATH="/home/vsevim/software/cellranger-arc-2.0.1/cellranger-arc"
