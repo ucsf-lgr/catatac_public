@@ -1,10 +1,5 @@
 #!/bin/bash
 set -euo pipefail
-slack() {
-    curl -X POST -H 'Content-type: application/json' \
-         --data "{\"text\": \"Message from CATATAC Primary Analysis: $1 \" }" \
-         https://hooks.slack.com/services/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
-}
 
 txtred=$'\e[0;31m' # Red
 txtgrn=$'\e[0;32m' # Green
