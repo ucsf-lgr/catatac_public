@@ -1,6 +1,6 @@
 # CATATAC Public Repo
 
-This repository contains the analysis code and pipelines for our CATATAC method, as described in our [bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2025.02.11.637716v2). CATATAC enables joint profiling of CRISPR perturbations and chromatin accessibility in single cells.
+This repository contains the analysis code and pipelines for our CATATAC method, as described in our [paper](https://www.cell.com/cell-reports-methods/fulltext/S2667-2375(25)00258-9). CATATAC enables joint profiling of CRISPR perturbations and chromatin accessibility in single cells.
 
 The codebase includes complete pipelines for processing raw FASTQ files through final analysis:
 
